@@ -13,7 +13,7 @@ pipeline {
                 sh """
                     ls -ltr
                     cd 01-vpc
-                    terraform init -reconfigue
+                    terraform init -reconfigure
                 """
             }
         }
