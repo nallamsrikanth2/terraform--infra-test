@@ -8,16 +8,16 @@ pipeline {
         disableConcurrentBuilds()
     }
     stages {
-        stage('Build') {
+        stage('init') {
             steps {
-                sh "echo This is Build"
+                sh """
+                    
+                """
             }
         }
-        stage('Test') {
+        stage('plan') {
             steps {
                 sh "echo This is Test"
-                sh "sleep 2"
-                sh "env"
             
             }
         }
