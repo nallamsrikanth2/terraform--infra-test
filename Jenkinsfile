@@ -25,7 +25,7 @@ pipeline {
         stage('plan') {
             when {
                 expression {
-                    params.ACTION = 'Apply'
+                    params.ACTION == 'Apply'
                 }
             }
             steps {
@@ -39,7 +39,7 @@ pipeline {
         stage('Deploy') {
              when {
                 expression {
-                    params.ACTION = 'Apply'
+                    params.ACTION == 'Apply'
                 }
             }
             steps {
