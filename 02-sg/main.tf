@@ -1,5 +1,5 @@
 module "db" {
-    source = "../../terraform-infra-dev/02-sg"
+    source = "git::https://github.com/nallamsrikanth2/terraform-infra-dev.git//02-sg?ref=main"
     project_name = var.project_name
     common_tags = var.common_tags
     environment = var.environment
@@ -10,7 +10,7 @@ module "db" {
 }
 
 module "backend" {
-    source = "../../terraform-infra-dev/02-sg"
+    source = "git::https://github.com/nallamsrikanth2/terraform-infra-dev.git//02-sg?ref=main"
     project_name = var.project_name
     common_tags = var.common_tags
     environment = var.environment
@@ -21,7 +21,7 @@ module "backend" {
 }
 
 module "frontend" {
-    source = "../../terraform-infra-dev/02-sg"
+    source = "git::https://github.com/nallamsrikanth2/terraform-infra-dev.git//02-sg?ref=main"
     project_name = var.project_name
     common_tags = var.common_tags
     environment = var.environment
@@ -32,7 +32,7 @@ module "frontend" {
 }
 
 module "bastion" {
-    source = "../../terraform-infra-dev/02-sg"
+    source = "git::https://github.com/nallamsrikanth2/terraform-infra-dev.git//02-sg?ref=main"
     project_name = var.project_name
     common_tags = var.common_tags
     environment = var.environment
@@ -43,7 +43,7 @@ module "bastion" {
 }
 
 module "vpn" {
-    source = "../../terraform-infra-dev/02-sg"
+    source = "git::https://github.com/nallamsrikanth2/terraform-infra-dev.git//02-sg?ref=main"
     project_name = var.project_name
     common_tags = var.common_tags
     environment = var.environment
@@ -55,7 +55,7 @@ module "vpn" {
 }
 
 module "app_alb" {
-    source = "../../terraform-infra-dev/02-sg"
+    source = "git::https://github.com/nallamsrikanth2/terraform-infra-dev.git//02-sg?ref=main"
     project_name = var.project_name
     common_tags = var.common_tags
     environment = var.environment
@@ -66,7 +66,7 @@ module "app_alb" {
 }
 
 module "web_alb" {
-    source = "../../terraform-infra-dev/02-sg"
+    source = "git::https://github.com/nallamsrikanth2/terraform-infra-dev.git//02-sg?ref=main"
     project_name = var.project_name
     common_tags = var.common_tags
     environment = var.environment
