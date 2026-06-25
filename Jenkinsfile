@@ -11,7 +11,7 @@ pipeline {
         stage('init') {
             steps {
                 sh """
-                    
+                    ls -ltr
                 """
             }
         }
